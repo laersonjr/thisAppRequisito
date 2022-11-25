@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20221125203236",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "departamento",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Departamento",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "projeto",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "projeto",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "recursoFuncionalidade",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "departamento",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

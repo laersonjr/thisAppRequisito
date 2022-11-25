@@ -1,0 +1,15 @@
+{
+  "thisAppRequisitoApp": {
+    "Status": {
+      "null": "",
+      "AGUARDANDO": "AGUARDANDO",
+      "PRIORIDADE": "PRIORIDADE",
+      "EM": "EM",
+      "RESOLUCAO": "RESOLUCAO",
+      "PARADO": "PARADO",
+      "BLOQUEADO": "BLOQUEADO",
+      "APROVACAO": "APROVACAO",
+      "FINALIZADO": "FINALIZADO"
+    }
+  }
+}

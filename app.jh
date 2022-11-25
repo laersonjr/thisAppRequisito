@@ -1,0 +1,72 @@
+entity Projeto {
+	nome String required,
+    dataDeCriacao LocalDate,
+    dataDeInicio LocalDate,
+    dataFim LocalDate
+}
+
+entity Requisito {
+	nome String required
+}
+
+entity Departamento {
+	nome String required
+}
+
+entity Funcionalidade {
+    funcionalidadeProjeto String required
+}
+
+enum Prioridade {
+	BAIXA, MEDIA, ALTA, MUITO ALTA
+}
+
+enum Complexibilidade {
+	BAIXA, MEDIA, ALTA, MUITO ALTA
+}
+
+enum Status {
+	AGUARDANDO PRIORIDADE,
+    EM RESOLUCAO,
+    PARADO,
+    BLOQUEADO,
+    AGUARDANDO APROVACAO,
+    FINALIZADO
+}
+
+entity RecursoFuncionalidade {
+	idrf String required,
+    descricaoRequisito String required,
+    prioridade Prioridade required,
+    complexibilidade Complexibilidade required,
+    esforco String,
+    status Status required
+}
+
+relationship OneToOne {
+	Funcionalidade{Projeto(nome)} to Projeto
+}
+
+relationship OneToMany {
+	Projeto to Requisito{Projeto(nome)}
+}
+
+relationship OneToMany {
+	Projeto to Departamento{Projeto(nome)}
+}
+
+relationship OneToMany {
+	Funcionalidade to RecursoFuncionalidade{Funcionalidade(funcionalidadeProjeto)}
+}
+
+relationship OneToMany {
+    RecursoFuncionalidade to Departamento{Departamento(nome)}
+}
+
+relationship OneToMany {
+    RecursoFuncionalidade to Requisito{Departamento(nome)}
+}
+
+// Set pagination options
+paginate Requisito, Departamento with infinite-scroll
+paginate RecursoFuncionalidade, Projeto with pagination

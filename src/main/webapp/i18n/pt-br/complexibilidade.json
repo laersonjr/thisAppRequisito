@@ -1,0 +1,11 @@
+{
+  "thisAppRequisitoApp": {
+    "Complexibilidade": {
+      "null": "",
+      "BAIXA": "BAIXA",
+      "MEDIA": "MEDIA",
+      "ALTA": "ALTA",
+      "MUITO": "MUITO"
+    }
+  }
+}

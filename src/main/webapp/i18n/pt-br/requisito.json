@@ -1,0 +1,26 @@
+{
+  "thisAppRequisitoApp": {
+    "requisito": {
+      "home": {
+        "title": "Requisitos",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Requisito",
+        "createOrEditLabel": "Criar ou editar Requisito",
+        "notFound": "Nenhum Requisito encontrado"
+      },
+      "created": "Um novo Requisito foi criado com o identificador {{ param }}",
+      "updated": "Um Requisito foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Requisito foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Requisito {{ id }}?"
+      },
+      "detail": {
+        "title": "Requisito"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "projeto": "Projeto",
+      "departamento": "Departamento"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "thisAppRequisitoApp": {
+    "funcionalidade": {
+      "home": {
+        "title": "Funcionalidades",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Funcionalidade",
+        "createOrEditLabel": "Criar ou editar Funcionalidade",
+        "notFound": "Nenhum Funcionalidade encontrado"
+      },
+      "created": "Um novo Funcionalidade foi criado com o identificador {{ param }}",
+      "updated": "Um Funcionalidade foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Funcionalidade foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Funcionalidade {{ id }}?"
+      },
+      "detail": {
+        "title": "Funcionalidade"
+      },
+      "id": "ID",
+      "funcionalidadeProjeto": "Funcionalidade Projeto",
+      "projeto": "Projeto",
+      "recursoFuncionalidade": "Recurso Funcionalidade"
+    }
+  }
+}

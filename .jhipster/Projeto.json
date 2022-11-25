@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20221125203234",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "projeto",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dataDeCriacao",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dataDeInicio",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dataFim",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Projeto",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "requisito",
+      "otherEntityRelationshipName": "projeto",
+      "relationshipName": "requisito",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "departamento",
+      "otherEntityRelationshipName": "projeto",
+      "relationshipName": "departamento",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

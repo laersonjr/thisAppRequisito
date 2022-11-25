@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20221125203237",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "funcionalidade",
+  "fields": [
+    {
+      "fieldName": "funcionalidadeProjeto",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Funcionalidade",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "projeto",
+      "ownerSide": true,
+      "relationshipName": "projeto",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "recursoFuncionalidade",
+      "otherEntityRelationshipName": "funcionalidade",
+      "relationshipName": "recursoFuncionalidade",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

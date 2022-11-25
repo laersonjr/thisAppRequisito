@@ -48,6 +48,17 @@ public class CacheConfiguration {
             createCache(cm, com.impulse.laerson.myapprequisito.domain.User.class.getName());
             createCache(cm, com.impulse.laerson.myapprequisito.domain.Authority.class.getName());
             createCache(cm, com.impulse.laerson.myapprequisito.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Projeto.class.getName());
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Projeto.class.getName() + ".requisitos");
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Projeto.class.getName() + ".departamentos");
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Requisito.class.getName());
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Departamento.class.getName());
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Funcionalidade.class.getName());
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Funcionalidade.class.getName() + ".nomes");
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.RecursoFuncionalidade.class.getName());
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.Funcionalidade.class.getName() + ".recursoFuncionalidades");
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.RecursoFuncionalidade.class.getName() + ".departamentos");
+            createCache(cm, com.impulse.laerson.myapprequisito.domain.RecursoFuncionalidade.class.getName() + ".requisitos");
             // jhipster-needle-ehcache-add-entry
         };
     }

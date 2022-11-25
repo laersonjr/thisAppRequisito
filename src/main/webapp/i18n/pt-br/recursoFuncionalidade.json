@@ -1,0 +1,32 @@
+{
+  "thisAppRequisitoApp": {
+    "recursoFuncionalidade": {
+      "home": {
+        "title": "Recurso Funcionalidades",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Recurso Funcionalidade",
+        "createOrEditLabel": "Criar ou editar Recurso Funcionalidade",
+        "notFound": "Nenhum Recurso Funcionalidade encontrado"
+      },
+      "created": "Um novo Recurso Funcionalidade foi criado com o identificador {{ param }}",
+      "updated": "Um Recurso Funcionalidade foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Recurso Funcionalidade foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Recurso Funcionalidade {{ id }}?"
+      },
+      "detail": {
+        "title": "Recurso Funcionalidade"
+      },
+      "id": "ID",
+      "idrf": "Idrf",
+      "descricaoRequisito": "Descricao Requisito",
+      "prioridade": "Prioridade",
+      "complexibilidade": "Complexibilidade",
+      "esforco": "Esforco",
+      "status": "Status",
+      "departamento": "Departamento",
+      "requisito": "Requisito",
+      "funcionalidade": "Funcionalidade"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "applications": "*",
+  "changelogDate": "20221125203238",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "recurso_funcionalidade",
+  "fields": [
+    {
+      "fieldName": "idrf",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descricaoRequisito",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "prioridade",
+      "fieldType": "Prioridade",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "BAIXA,MEDIA,ALTA,MUITO"
+    },
+    {
+      "fieldName": "complexibilidade",
+      "fieldType": "Complexibilidade",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "BAIXA,MEDIA,ALTA,MUITO"
+    },
+    {
+      "fieldName": "esforco",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "AGUARDANDO,PRIORIDADE,EM,RESOLUCAO,PARADO,BLOQUEADO,APROVACAO,FINALIZADO"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RecursoFuncionalidade",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "departamento",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "departamento",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "requisito",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "requisito",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "funcionalidadeProjeto",
+      "otherEntityName": "funcionalidade",
+      "otherEntityRelationshipName": "recursoFuncionalidade",
+      "relationshipName": "funcionalidade",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
